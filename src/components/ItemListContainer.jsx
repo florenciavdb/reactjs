@@ -1,10 +1,10 @@
 import * as React from 'react';
+import ItemCount from './ItemCount/ItemCount';
 
 export default function ItemListContainer () {
     return (
-        <>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae aspernatur dolorum quibusdam vero neque suscipit ex corporis eius! Sapiente odit nisi doloremque eos mollitia corrupti libero expedita nihil vitae?</p>
-        </>
-        
+        <div>
+        <ItemCount stock={10} />
+        </div>
     )
 }

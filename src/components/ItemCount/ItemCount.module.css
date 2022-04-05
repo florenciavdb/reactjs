@@ -1,0 +1,54 @@
+.Btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.DecrementBtn {
+    margin-left: 725px;
+    background-color: rgb(235, 235, 235);
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.IncrementBtn {
+    margin-right: 725px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.BuyBtn {
+    margin: auto;
+    display: block;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.BuyBtn:hover {
+    height: 32px;
+    width: 107px;
+    transition: 0.5s;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}

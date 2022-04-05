@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
-import "././App.css";
 
 export default function App () {
   return (
