@@ -2,28 +2,28 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .DecrementBtn {
-    margin-left: 725px;
-    background-color: rgb(235, 235, 235);
+    margin-left: 110px;
+    background-color: rgb(250, 250, 250);
     height: 20px;
     width: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 18px;
     color: rgb(85, 85, 85);
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 .IncrementBtn {
-    margin-right: 725px;
-    background-color: rgb(235, 235, 235);
+    margin-right: 110px;
+    background-color: rgb(250, 250, 250);;
     border: none;
     height: 20px;
     width: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 18px;
     color: rgb(85, 85, 85);
     box-shadow: 1px 1px 1px 1px lightgray;
@@ -32,11 +32,11 @@
 .BuyBtn {
     margin: auto;
     display: block;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(250, 250, 250);
     border: none;
     height: 30px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 16px;
     color: rgb(85, 85, 85);
     box-shadow: 1px 1px 1px 1px lightgray;

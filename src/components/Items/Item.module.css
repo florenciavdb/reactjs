@@ -1,0 +1,27 @@
+
+.Container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 450px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+.Card {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(121, 121, 121);
+    border-radius: 5px;
+}
+
+.Name, .Price {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
