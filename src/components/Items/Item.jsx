@@ -10,7 +10,7 @@ function Item ({id, name, price, image}) {
                 <div className={i.Name}>{name}</div>
                 <div className={i.Price}>{price}</div>
                 <hr />
-                <ItemCount stock={10}/>
+                <button className={i.Detailsbtn}>Details</button>
             </div>
     )
 }

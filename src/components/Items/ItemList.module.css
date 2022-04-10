@@ -10,3 +10,14 @@
     row-gap: 30px;
     column-gap: 30px;
 }
+
+.Card {
+    height: 380px;
+    width: 260px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Card :hover{
+    box-shadow: 2px 2px 2px 2px lightgray;
+}

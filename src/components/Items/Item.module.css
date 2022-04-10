@@ -1,22 +1,39 @@
 .Card {
-    height: 480px;
+    height: 380px;
     width: 260px;
     background-color: white;
     border-radius: 5px;
 }
 
-.Name, .Price {
+.Card :hover{
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.Name {
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
 }
 
+.Price {
+    font-size: 18px;
+    text-align: center;
+}
+
 .Image{
     display: block;
     margin: auto;
-    width: 260px;
+    width: 240px;
+    padding-top: 10px;
 }
 
 hr{
     opacity: 0.5;
+}
+
+.Detailsbtn {
+    display: block;
+    margin: auto;
+    height: 28px;
+    width: 80px;
 }

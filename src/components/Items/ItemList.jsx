@@ -11,9 +11,10 @@ function ItemList({products}) {
             image={p.image}
             name={p.name}
             price={p.price} />
-        ))}  
+        ))} 
         </div>
     )
 }
 
-export default ItemList
+export default ItemList;
+

@@ -30,4 +30,4 @@ function ItemCount ({stock}) {
     )
 }
 
-export default ItemCount
+export default ItemCount;
