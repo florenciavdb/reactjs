@@ -1,9 +1,9 @@
 import React from 'react';
 import i from "./Item.module.css";
-import ItemCount from './ItemCount';
 
 function Item ({id, name, price, image}) {
     return (
+        <div className={i.Container}>
             <div className={i.Card} key={id}>
                 <img src={image} className={i.Image} />
                 <hr />
@@ -12,6 +12,7 @@ function Item ({id, name, price, image}) {
                 <hr />
                 <button className={i.Detailsbtn}>Details</button>
             </div>
+        </div>
     )
 }
 

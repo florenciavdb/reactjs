@@ -15,7 +15,7 @@ function ItemCount ({stock}) {
     }
 
     function onAdd () {
-        alert ("You added " + count + "items to your cart");
+        alert ("You added " + count + " items to your cart");
     }
 
     return (
@@ -25,7 +25,7 @@ function ItemCount ({stock}) {
                 <p>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            <button className={c.BuyBtn} onClick={onAdd}>Comprar</button>
+            <button className={c.BuyBtn} onClick={onAdd}>Buy</button>
         </div>
     )
 }

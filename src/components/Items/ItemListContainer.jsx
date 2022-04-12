@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import { bringItems } from '../utils/products';
+import {getItems} from '../utils/products';
 import ItemList from './ItemList';
 
-const ItemListContainer = () => {
+
+export default function ItemListContainer () {
     const [products, setProducts]= useState ([]);
 
     useEffect(() => {
-        bringItems ()
+        getItems ()
         .then((res) => setProducts(res))
-        .catch(error => console.log(error));
-    }, []
-    );
+        .catch ((error) => console.log(error));
+    }, []);
 
     return (
         <div>
@@ -18,5 +18,3 @@ const ItemListContainer = () => {
         </div>
     )
 }
-
-export default ItemListContainer;

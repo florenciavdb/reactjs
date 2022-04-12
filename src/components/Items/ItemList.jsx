@@ -10,11 +10,11 @@ function ItemList({products}) {
             key={p.id}
             image={p.image}
             name={p.name}
-            price={p.price} />
-        ))} 
+            price={p.price}
+            />
+        ))}  
         </div>
     )
 }
 
 export default ItemList;
-

@@ -1,23 +1,12 @@
 .Container {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(4, 320px);
-    grid-template-rows: 450px;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(550px, afr));
     margin-top: 80px;
-    row-gap: 30px;
-    column-gap: 30px;
-}
-
-.Card {
-    height: 380px;
-    width: 260px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.Card :hover{
-    box-shadow: 2px 2px 2px 2px lightgray;
+    row-gap: 100px;
+    column-gap: 25px;
+    justify-items: center;
+    align-items: center;
 }

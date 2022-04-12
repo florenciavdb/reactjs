@@ -1,0 +1,51 @@
+.Container{
+    margin: auto;
+    height: auto;
+    width: 1150px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.Image {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.Content {
+    width: 500px;
+    height: auto;
+}
+
+.Name {
+    font-size: 35px;
+}
+
+.Price {
+    font-size: 30px;
+    color: rgb(130, 130, 130);
+    font-weight: 620;
+    margin-top: 20px;
+}
+
+.Description {
+    margin-top: 20px;
+}
+
+.Category {
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    background-color: rgb(130, 130, 130);
+    color: white;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.Size {
+    font-size: 22px;
+    margin-top: 20px;
+}
+

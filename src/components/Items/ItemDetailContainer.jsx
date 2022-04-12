@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from "./ItemDetail";
-import { bringItem } from '../utils/products';
+import { getItem } from '../utils/products.js';
 
 const ItemDetailContainer = () => {
     
-    const [item, setItem] = useState ({});
+    const [product, setProduct] = useState ({});
 
     useEffect (() => {
-        bringItem()
-            .then((res) => {
-                setItem(res)
+        getItem()
+        .then((res) => {
+            setProduct(res)
         })
     }, []);
+    //console.log(product);
 
     return (
         <>
-        <ItemDetail item={item}/>
+        <ItemDetail product={product}/>
         </>
     )
 }
 
 export default ItemDetailContainer;
-
