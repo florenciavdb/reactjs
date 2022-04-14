@@ -2,7 +2,7 @@ const products = [
     { 
        id: 1,
        name: 'MC / T-shirt',
-       description: 'Short sleeve T-shirt <br> Fabric: Frosted jersey (100% Cotton)- Cut: Regular',
+       description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
        price: '$3.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20235foto91239.jpg',
        category: 'Men',
@@ -13,6 +13,7 @@ const products = [
     { 
        id: 2,
        name: 'T Shirt2',
+       description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
        price: '$4.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20960foto93904.jpg',
        category: 'Men',
@@ -23,6 +24,7 @@ const products = [
     { 
        id: 3,
        name: 'T Shirt3',
+       description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
        price: '$5.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20537foto92196.jpg',
        category: 'Men',
@@ -33,6 +35,7 @@ const products = [
     { 
      id: 4,
      name: 'T Shirt4',
+     description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
      price: '$6.000',
      image: 'https://www.cristobalcolon.com/fullaccess/item20922foto93799.jpg',
      category: 'Men',
@@ -43,6 +46,7 @@ const products = [
   { 
     id: 5,
     name: 'Batik / T-Shirt',
+    description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
     description: 'Short sleeve T-shirt <br> Fabric: Frosted jersey (100% Cotton)- Cut: Regular',
     price: '$3.000',
     image: 'http://www.cristobalcolon.com/fullaccess/item21130foto94517.jpg',
@@ -54,6 +58,7 @@ const products = [
  { 
     id: 6,
     name: 'Over The Rainbow / T-shirt',
+    description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
     price: '$4.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item21068foto94287.jpg',
     category: 'Women',
@@ -64,6 +69,7 @@ const products = [
  { 
     id: 7,
     name: 'Procces Print / T-Shirt',
+    description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
     price: '$5.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item20835foto93512.jpg',
     category: 'Women',
@@ -74,6 +80,7 @@ const products = [
  { 
     id: 8,
     name: 'Cracker / T-Shirt',
+    description: 'Short sleeve T-shirt - Fabric: Frosted jersey (100% Cotton) - Cut: Regular',
     price: '$6.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item20853foto93588.jpg',
     category: 'Women',

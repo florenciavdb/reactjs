@@ -7,6 +7,7 @@ function ItemList({products}) {
         <div className={l.Container}>
         {products.map(p => (   
             <Item
+            id={p.id}
             key={p.id}
             image={p.image}
             name={p.name}

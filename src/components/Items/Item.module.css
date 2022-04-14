@@ -3,18 +3,19 @@
     width: 260px;
     border-color: rgb(220, 220, 220);
     border-style: solid;
+    border-radius: 4px;
     
 }
 
 .Name {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     margin-top: 10px;
     font-weight: 550;
 }
 
 .Price {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -37,9 +38,15 @@ hr{
     width: 80px;
     background-color: rgb(130, 130, 130);
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     box-shadow: 1px 1px 1px 1px lightgray;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.Detailsbtn a{
+    text-decoration: none;
 }
 
 .Detailsbtn:hover{

@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
         .then((res) => {
             setProduct(res)
         })
-        .cath((error) => {
+        .catch((error) => {
             console.log(error);
         });
     }, [id]);
