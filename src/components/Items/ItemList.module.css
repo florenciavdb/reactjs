@@ -1,12 +1,13 @@
 .Container {
     height: auto;
-    width: auto;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(550px, afr));
     margin-top: 80px;
     row-gap: 100px;
-    column-gap: 25px;
+    column-gap: 20px;
     justify-items: center;
     align-items: center;
 }

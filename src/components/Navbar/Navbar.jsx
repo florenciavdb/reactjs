@@ -2,6 +2,7 @@
 import * as React from 'react';
 import CarWidget from "../CarWidget";
 import n from "./Navbar.module.css";
+import { Link } from 'react-router-dom';
 
 export default function Navbar () {
 
@@ -11,12 +12,12 @@ export default function Navbar () {
       <img src = {require('../../img/logo1.png')} className= {n.Logo}/>
 
       <div className={n.Options}>
-        <span>MEN</span>
-        <span>WOMEN</span>
-        <span>KIDS</span>
-        <span>SNOW</span>
-        <span>SURF</span>
-        <span>SKATE</span>
+        <Link to='/category/Men'>MEN</Link>
+        <Link to='/category/Women'>WOMEN</Link>
+        <Link to='/category/Kids'>KIDS</Link>
+        <Link to='/category/Snow'>SNOW</Link>
+        <Link to='/category/Surf'>SURF</Link>
+        <Link to='/category/Skate'>SKATE</Link>
       </div>
 
       <div className={n.CarW}>

@@ -1,18 +1,20 @@
 .Card {
-    height: 380px;
-    width: 240px;
-    background-color: white;
-    border-radius: 5px;
+    height: 420px;
+    width: 260px;
+    border-color: rgb(220, 220, 220);
+    border-style: solid;
+    
 }
 
 .Name {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin-top: 10px;
+    font-weight: 550;
 }
 
 .Price {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -25,6 +27,7 @@
 
 hr{
     opacity: 0.5;
+    width: 90%;
 }
 
 .Detailsbtn {
@@ -34,15 +37,14 @@ hr{
     width: 80px;
     background-color: rgb(130, 130, 130);
     border: none;
-    border-radius: 3px;
     font-size: 16px;
     color: white;
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 .Detailsbtn:hover{
-    height: 32px;
-    width: 90px;
+    height: 30px;
+    width: 82px;
     transition: 0.5s;
     color: rgb(200, 200, 200);
 }

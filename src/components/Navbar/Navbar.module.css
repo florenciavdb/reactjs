@@ -7,7 +7,6 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  
 }
 
 .Logo {
@@ -21,6 +20,15 @@
   flex-flow: wrap;
   justify-content: space-between;
   width: 500px;
+}
+
+.Options a{
+  color: white;
+  text-decoration: none;
+}
+
+.Options a:hover{
+  color:lightgray;
 }
 
 .CarW {
