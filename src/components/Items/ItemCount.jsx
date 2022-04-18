@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import c from "./ItemCount.module.css";
+import c from "./css/ItemCount.module.css";
 
-function ItemCount ({stock}) {
-    const [count, setCount] = useState(0);
+function ItemCount ({stock, add}) {
+    const [count, setCount] = useState(1);
 
     function adding () {
         if(count < stock)
@@ -10,22 +10,18 @@ function ItemCount ({stock}) {
     }
 
     function subs () {
-        if(count > 0)
+        if(count > 1)
         setCount (count - 1);
-    }
-
-    function onAdd () {
-        alert ("You added " + count + " items to your cart");
     }
 
     return (
         <div className={c.AllBtn}>
             <div className={c.Btns}>
                 <button className={c.DecrementBtn} onClick={subs}>-</button>
-                <p>{count}</p>
+                <p className={c.Count}>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            <button className={c.BuyBtn} onClick={onAdd}>Buy</button>
+            <button className={c.BuyBtn} onClick={()=>add(count)}>Buy</button>
         </div>
     )
 }

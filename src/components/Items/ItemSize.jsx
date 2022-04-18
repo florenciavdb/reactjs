@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import s from './ItemSize.module.css';
+import s from './css/ItemSize.module.css';
 
 const ItemSize = ({size}) => {
     return (

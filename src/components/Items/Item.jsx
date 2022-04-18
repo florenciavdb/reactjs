@@ -1,5 +1,5 @@
 import React from 'react';
-import i from "./Item.module.css";
+import i from './css/Item.module.css';
 import { Link } from 'react-router-dom';
 
 function Item ({id, name, price, image}) {

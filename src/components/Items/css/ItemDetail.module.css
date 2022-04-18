@@ -10,7 +10,6 @@
 
 .Image {
     width: 500px;
-    border-radius: 5px;
 }
 
 .Content {
@@ -23,25 +22,28 @@
 }
 
 .Price {
-    font-size: 30px;
-    color: rgb(130, 130, 130);
+    font-size: 32px;
+    color: black;
     font-weight: 620;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-.Description {
+.Description1 {
+    margin-top: 50px;
+}
+
+.Description2, .Description3 {
     margin-top: 20px;
 }
 
 .Category {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
-    background-color: rgb(130, 130, 130);
+    background-color: black;
     color: white;
     width: 80px;
     text-align: center;
-    border-radius: 2px;
 }
 
 .Size {
