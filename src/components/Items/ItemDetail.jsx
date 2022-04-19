@@ -11,7 +11,6 @@ const [count, setCount] = useState(0)
         setCount(amount)
     };
     
-    
     return (
             <div className={d.Container}>
                 <img src={product.image} className={d.Image} />
