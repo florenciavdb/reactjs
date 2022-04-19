@@ -3,7 +3,7 @@ import c from "./css/ItemCount.module.css";
 import { Link } from 'react-router-dom';
 
 function ItemCount ({stock, add}) {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
 
     function adding () {
         if(count < stock)
@@ -11,7 +11,7 @@ function ItemCount ({stock, add}) {
     }
 
     function subs () {
-        if(count > 1)
+        if(count > 0)
         setCount (count - 1);
     }
 
@@ -22,7 +22,8 @@ function ItemCount ({stock, add}) {
                 <p className={c.Count}>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            <Link to={`/cart`}><button className={c.BuyBtn} onClick={()=>add(count)}>Add to cart</button></Link>
+            {/*<Link to={`/cart`}><button className={c.AddBtn} onClick={()=>add(count)}>Add to cart</button></Link>*/}
+            <button className={c.AddBtn} onClick={()=>add(count)}>Add to cart</button>
         </div>
     )
 }

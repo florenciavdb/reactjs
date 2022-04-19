@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import CarWidget from "../CarWidget";
 import n from "./Navbar.module.css";

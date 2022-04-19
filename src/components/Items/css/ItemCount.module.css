@@ -1,5 +1,5 @@
 .Btns {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +46,7 @@
 
 }
 
-.BuyBtn {
+.AddBtn {
     float: left;
     background-color: white;
     border: none;
@@ -57,7 +57,7 @@
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 
-.BuyBtn:hover {
+.AddBtn:hover {
     font-weight: 550;
 }
 

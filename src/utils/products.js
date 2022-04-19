@@ -3,12 +3,12 @@ const products = [
        id: 1,
        name: 'MC / T-shirt',
        description1: 'Short sleeve T-shirt',
-        description2: 'Fabric: Frosted jersey (100% Cotton)',
-        description3: 'Cut: Regular',
+       description2: 'Fabric: Frosted jersey (100% Cotton)',
+       description3: 'Cut: Regular',
        price: '$3.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20235foto91239.jpg',
        category: 'Men',
-       size: 'XS, S, M, L, XL',
+       sizes: ["XS", "S", "M", "L", "XL"],
        stock: 10
     },
 
@@ -21,7 +21,7 @@ const products = [
        price: '$4.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20960foto93904.jpg',
        category: 'Men',
-       size: 'XS, S, M, L, XL',
+       sizes: ["S", "M", "L"],
        stock: 15
     },
 
@@ -34,7 +34,7 @@ const products = [
        price: '$5.000',
        image: 'https://www.cristobalcolon.com/fullaccess/item20537foto92196.jpg',
        category: 'Men',
-       size: 'XS, S, M, L, XL',
+       sizes: ["XS", "S", "M", "L", "XL"],
        stock: 14
     },
 
@@ -47,7 +47,7 @@ const products = [
      price: '$6.000',
      image: 'https://www.cristobalcolon.com/fullaccess/item20922foto93799.jpg',
      category: 'Men',
-     size: 'XS, S, M, L, XL',
+     sizes: ["S", "M", "L"],
      stock: 18
   },
 
@@ -60,7 +60,7 @@ const products = [
     price: '$3.000',
     image: 'http://www.cristobalcolon.com/fullaccess/item21130foto94517.jpg',
     category: 'Women',
-    size: 'XS, S, M, L, XL',
+    sizes: ["XS", "S", "M", "L", "XL"],
     stock: 10
  },
 
@@ -73,7 +73,7 @@ const products = [
     price: '$4.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item21068foto94287.jpg',
     category: 'Women',
-    size: 'XS, S, M, L, XL',
+    sizes: ["S", "M", "L"],
     stock: 15
  },
 
@@ -86,7 +86,7 @@ const products = [
     price: '$5.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item20835foto93512.jpg',
     category: 'Women',
-    size: 'XS, S, M, L, XL',
+    sizes: ["XS", "S", "M", "L", "XL"],
     stock: 14
  },
 
@@ -99,10 +99,12 @@ const products = [
     price: '$6.000',
     image: 'https://www.cristobalcolon.com/fullaccess/item20853foto93588.jpg',
     category: 'Women',
-    size: 'XS, S, M, L, XL',
+    sizes: ["S", "M", "L"],
     stock: 18
 }
 ]
+
+export default products; 
 
 export const getItems = (categoryId) => {
     return new Promise ((resolve, reject) => {

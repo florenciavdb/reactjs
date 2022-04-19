@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import ItemCount from './ItemCount';
 import d from './css/ItemDetail.module.css';
 import ItemSize from './ItemSize';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({product}) => {
 
 const [count, setCount] = useState(0)
 
     const add = (amount) => {
-        setCount(amount)
-    };
-    
+        setCount(amount)};
+        
     return (
             <div className={d.Container}>
                 <img src={product.image} className={d.Image} />
@@ -21,8 +21,10 @@ const [count, setCount] = useState(0)
                     <div className={d.Description1}>{product.description1}</div>
                     <div className={d.Description2}>{product.description2}</div>
                     <div className={d.Description3}>{product.description3}</div>
-                    <ItemSize size={product.size}/>
-                    <ItemCount stock={product.stock} add={add}/>     
+                    <ItemSize sizes={product.sizes}/>
+                       
+                {count === 0 ? <ItemCount stock={product.stock} add={add} /> : <Link to='/cart' className={d.GoCart}>See Cart</Link> }
+    
                 </div>
             </div>
     )
