@@ -8,8 +8,8 @@ const ItemDetail = ({product}) => {
 
 const [count, setCount] = useState(0)
 
-    const add = (amount) => {
-        setCount(amount)};
+    const onAdd = (amount) => {
+        setCount(amount)} 
         
     return (
             <div className={d.Container}>
@@ -23,7 +23,7 @@ const [count, setCount] = useState(0)
                     <div className={d.Description3}>{product.description3}</div>
                     <ItemSize sizes={product.sizes}/>
                        
-                {count === 0 ? <ItemCount stock={product.stock} add={add} /> : <Link to='/cart' className={d.GoCart}>See Cart</Link> }
+                {count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>See Cart</Link> }
     
                 </div>
             </div>

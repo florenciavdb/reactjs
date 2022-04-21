@@ -1,8 +1,11 @@
-import React, {useState} from "react";
 import c from "./css/ItemCount.module.css";
-import { Link } from 'react-router-dom';
+import { React, useState, useContext} from 'react';
+import { CartContext } from '../CartContext';
 
-function ItemCount ({stock, add}) {
+function ItemCount ({stock, onAdd, product}) {
+    
+    const { addItem } = useContext (CartContext);
+
     const [count, setCount] = useState(0);
 
     function adding () {
@@ -22,8 +25,7 @@ function ItemCount ({stock, add}) {
                 <p className={c.Count}>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            {/*<Link to={`/cart`}><button className={c.AddBtn} onClick={()=>add(count)}>Add to cart</button></Link>*/}
-            <button className={c.AddBtn} onClick={()=>add(count)}>Add to cart</button>
+            <button className={c.AddBtn} onClick={()=>addItem(product, onAdd(count))}> Add to cart</button>
         </div>
     )
 }
