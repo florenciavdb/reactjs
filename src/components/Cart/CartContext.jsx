@@ -4,7 +4,7 @@ export const CartContext = createContext ();
 
 const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState ([]);
-    
+
     const addItem = (item) => {
     const indexProduct = cart.findIndex((cartItem)=>cartItem.id === item.id);
     if (indexProduct !== -1) {
@@ -18,14 +18,24 @@ const CartContextProvider = ({ children }) => {
     console.log(cart);
 
     const removeItem = (id) => {
-        setCart([cart.filter((product) => product.id !==id)])
+        setCart(cart.filter((product) => product.id !==id))
     };
+
+    const buyAll = () => setCart ([]);
+
+    const quant = () => {
+        return cart.reduce((total, item) => total + item.count * item.price, 0)
+    }
+
+    const quantItems = () => {
+        return cart.reduce((total, item) => total + item.count, 0)
+    }
 
     const clear = () => setCart([]);
     
 
     return (
-        <CartContext.Provider value = {{cart, addItem, removeItem, clear}} >
+        <CartContext.Provider value = {{cart, addItem, removeItem, clear, buyAll, quant, quantItems}} >
             {children}
         </CartContext.Provider>
     )

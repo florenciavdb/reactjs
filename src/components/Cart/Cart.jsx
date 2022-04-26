@@ -4,7 +4,9 @@ import r from './Cart.module.css';
 import { Link } from 'react';
 
 const Cart = () => {
-    const {cart, removeItem, buyAll } = useContext(CartContext);
+    const {cart, removeItem, buyAll, quant } = useContext(CartContext);
+
+    let totalValue = quant();
 
     return (
         <div className={r.Container}>
@@ -23,15 +25,21 @@ const Cart = () => {
               <div className= {r.ItemBuyDetails}>
                     <img className= {r.Picture} src={item.image} />   
                     <span>{item.name}</span>
-                    <span>HELP{item.count}</span>
+                    <span>HELP{item.quant}</span>
                     <span>{item.price}</span>
-                    <span>{(item.price) * (item.count)}</span>
+                    <span>{(item.price) * (item.quant)}</span>
                     <button className={r.Remove} onClick={() => removeItem(item.id)}> Remove</button>
               </div>
             ))}
         </div>
+        <div className = {r.totalPrice}>
+          {cart.length > 0 &&  
+          <h3>Total: ${totalValue}</h3>}
+          </div>
+          
             <div className={r.btns}>
-                {/*<Link to='/'><button className={r.continueBtn}> Continue Shopping </button></Link>*/}
+                <button className={r.continueBtn}> Continue Shopping </button>
+                {/*<Link to={`/`}><button className={r.continueBtn}> Continue Shopping </button></Link>*/}
                 <button className = {r.BuyBtn} onClick={buyAll}> Buy </button>
             </div>
     </div>

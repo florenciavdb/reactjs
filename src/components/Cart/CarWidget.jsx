@@ -1,11 +1,17 @@
-import * as React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
 import w from './CarWidget.module.css';
 
-export default function CarWidget () {
+const CarWidget = () => {
+    const { quantItems } = useContext (CartContext);
+
+
     return (
         <div className={w.Btn}>
-        <Link to={`/cart`}>🛒</Link>
+        <Link to={`/cart`}>🛒({ quantItems })</Link>
         </div>
     )
 };
+
+export default CarWidget;
