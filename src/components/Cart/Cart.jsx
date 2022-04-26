@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import r from './Cart.module.css';
 import { Link } from 'react';
@@ -25,16 +25,16 @@ const Cart = () => {
               <div className= {r.ItemBuyDetails}>
                     <img className= {r.Picture} src={item.image} />   
                     <span>{item.name}</span>
-                    <span>HELP{item.quant}</span>
-                    <span>{item.price}</span>
-                    <span>{(item.price) * (item.quant)}</span>
+                    <span>{item.count}</span>
+                    <span>${item.price}</span>
+                    <span>{(item.price) * (item.count)}</span>
                     <button className={r.Remove} onClick={() => removeItem(item.id)}> Remove</button>
               </div>
             ))}
         </div>
         <div className = {r.totalPrice}>
           {cart.length > 0 &&  
-          <h3>Total: ${totalValue}</h3>}
+          <h3>TOTAL: ${totalValue}</h3>}
           </div>
           
             <div className={r.btns}>

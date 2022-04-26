@@ -3,9 +3,10 @@ import React, { useState, createContext } from 'react';
 export const CartContext = createContext ();
 
 const CartContextProvider = ({ children }) => {
-    const [cart, setCart] = useState ([]);
-
-    const addItem = (item) => {
+    const [cart, setCart ] = useState ([]);
+    
+    const addItem = (item, quant) => { 
+        item.quant = quant;
     const indexProduct = cart.findIndex((cartItem)=>cartItem.id === item.id);
     if (indexProduct !== -1) {
         const newCart = [...cart];
@@ -32,7 +33,6 @@ const CartContextProvider = ({ children }) => {
     }
 
     const clear = () => setCart([]);
-    
 
     return (
         <CartContext.Provider value = {{cart, addItem, removeItem, clear, buyAll, quant, quantItems}} >

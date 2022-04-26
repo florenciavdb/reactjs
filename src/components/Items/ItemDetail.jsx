@@ -9,7 +9,9 @@ const ItemDetail = ({product}) => {
 const [count, setCount] = useState(0)
 
     const onAdd = (amount) => {
-        setCount(amount)} 
+        setCount(amount)
+        return amount
+    } 
         
     return (
             <div className={d.Container}>
@@ -17,7 +19,7 @@ const [count, setCount] = useState(0)
                 <div className={d.Content}>
                     <div className= {d.Name}>{product.name}</div>
                     <div className={d.Category}>{product.category}</div>
-                    <div className= {d.Price}>{product.price}</div>
+                    <div className= {d.Price}>${product.price}</div>
                     <div className={d.Description1}>{product.description1}</div>
                     <div className={d.Description2}>{product.description2}</div>
                     <div className={d.Description3}>{product.description3}</div>
