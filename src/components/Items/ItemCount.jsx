@@ -1,6 +1,6 @@
 import c from "./css/ItemCount.module.css";
 import { React, useState, useContext} from 'react';
-import { CartContext } from '../CartContext';
+import { CartContext } from '../Cart/CartContext';
 
 function ItemCount ({stock, onAdd, product}) {
     
@@ -25,7 +25,11 @@ function ItemCount ({stock, onAdd, product}) {
                 <p className={c.Count}>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            <button className={c.AddBtn} onClick={()=>addItem(product, onAdd(count))}> Add to cart</button>
+            <button className={c.AddBtn}
+                onClick={() => {
+                addItem(product, onAdd(count)); 
+                setCount(1);}} >
+                Add to cart  </button>
         </div>
     )
 }

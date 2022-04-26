@@ -69,6 +69,6 @@
     font-weight: 550;
     background-color: rgb(247, 247, 247);
     border-color: rgb(245, 245, 245);
-    box-shadow: 4px 4px 4px 4px rgb(220, 220, 220);
-    transition: 0.5s;
+    box-shadow: 3px 3px 3px 3px rgb(220, 220, 220);
+    transition: 0.2s;
 }

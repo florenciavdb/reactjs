@@ -1,0 +1,124 @@
+.gridItems{
+ display: grid;
+ grid-template-rows: 300px, 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+hr {
+    width: 65%;
+}
+
+.itemsTittle{
+    width: 60%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.ItemBuyDetails {
+    height: 100%;
+    width: 60%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.ItemBuyDetails:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(240, 240, 240);
+    transition: 0.2s;
+}
+
+.Picture {
+    height: 100px;
+}
+
+.Remove {
+    background-color:black;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.Remove:hover {
+    transition: 0.2s;
+    font-size: 16.5px;
+    color: rgb(200, 200, 200);
+}
+
+.gridTotal {
+    border-color: rgb(230, 230, 230);
+    border-style: solid;
+    width: 100%;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.continueBtn {
+    float: left;
+    margin-top: 100px;
+    background-color: white;
+    border: none;
+    height: 35px;
+    width: 350px;
+    font-size: 18px;
+    color: rgb(130, 130, 130);
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.continueBtn:hover {
+    font-weight: 550;
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 3px 3px rgb(220, 220, 220);
+    transition: 0.2s;
+}
+
+.BuyBtn {
+    float: left;
+    margin-top: 100px;
+    background-color: white;
+    border: none;
+    height: 35px;
+    width: 350px;
+    font-size: 18px;
+    color: rgb(130, 130, 130);
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BuyBtn:hover {
+    font-weight: 550;
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 3px 3px rgb(220, 220, 220);
+    transition: 0.2s;
+}
