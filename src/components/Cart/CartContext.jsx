@@ -1,17 +1,9 @@
-import React, { useState, createContext, useEffect} from 'react';
+import React, { useState, createContext } from 'react';
 
 export const CartContext = createContext ();
 
 const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState ([]);
-
-    const [totalQuant, setTotalQuant] = useState(0);
-
-    const calculateQuant = () => setTotalQuant(cart.reduce((total, item) => (total += item.cant), 0));
-    
-    useEffect (() => {
-        calculateQuant();
-    }, [cart]);
     
     const addItem = (item) => {
     const indexProduct = cart.findIndex((cartItem)=>cartItem.id === item.id);

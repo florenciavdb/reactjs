@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../CartContext';
+import { CartContext } from './CartContext';
 import r from './Cart.module.css';
 import { Link } from 'react';
 
 const Cart = () => {
     const {cart, removeItem, buyAll } = useContext(CartContext);
 
-     return (
-    <div className={r.Container}>
+    return (
+        <div className={r.Container}>
             <h2>SHOPPING CART</h2>
             <h3 className= {r.Length}>{cart.length} ITEMS</h3>
             {/*<div className= {r.itemsTittle}>
@@ -31,12 +31,11 @@ const Cart = () => {
             ))}
         </div>
             <div className={r.btns}>
-                <Link to='/'><button className={r.continueBtn}> Continue Shopping </button></Link>
+                {/*<Link to='/'><button className={r.continueBtn}> Continue Shopping </button></Link>*/}
                 <button className = {r.BuyBtn} onClick={buyAll}> Buy </button>
             </div>
     </div>
   ); 
 };
-
 
 export default Cart;

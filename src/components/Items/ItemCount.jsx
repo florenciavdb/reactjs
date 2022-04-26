@@ -25,11 +25,7 @@ function ItemCount ({stock, onAdd, product}) {
                 <p className={c.Count}>{count}</p>
                 <button className={c.IncrementBtn} onClick={adding}>+</button>
             </div>
-            <button className={c.AddBtn}
-                onClick={() => {
-                addItem(product, onAdd(count)); 
-                setCount(1);}} >
-                Add to cart  </button>
+            <button className={c.AddBtn} onClick={()=>addItem(product, onAdd(count))}> Add to cart</button>
         </div>
     )
 }
