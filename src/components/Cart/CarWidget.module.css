@@ -1,4 +1,13 @@
 .Btn {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
+}
+
+.Btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.Btn a:hover {
+    color: lightgray;
 }
