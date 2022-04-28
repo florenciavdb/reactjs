@@ -8,7 +8,7 @@ export default function Navbar () {
   return (
 
     <div className={n.Menu}>
-      <img src = {require('../../img/logo1.png')} className= {n.Logo}/>
+      <img src = {require('../../img/logo1.png')} className= {n.Logo} alt='logo'/>
 
       <div className={n.Options}>
         <Link to='/category/Men'>MEN</Link>

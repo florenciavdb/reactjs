@@ -1,7 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
 import r from './Cart.module.css';
-import { Link } from 'react';
 
 const Cart = () => {
     const {cart, removeItem, buyAll, totalValue } = useContext(CartContext);
@@ -22,7 +21,7 @@ const Cart = () => {
           {cart.length > 0 &&
             cart.map((item) => (
               <div className= {r.ItemBuyDetails}>
-                    <img className= {r.Picture} src={item.image} />   
+                    <img className= {r.Picture} src={item.image} alt='product' />   
                     <span>{item.name}</span>
                     <span>{item.quant}</span>
                     <span>${item.price}</span>

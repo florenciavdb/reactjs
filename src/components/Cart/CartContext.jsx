@@ -22,8 +22,6 @@ const CartContextProvider = ({ children }) => {
     }, [cart]);
     
 
-   
-
     const addItem = (item, quant) => { 
         item.quant = quant;
     const indexProduct = cart.findIndex((cartItem)=>cartItem.id === item.id);

@@ -6,7 +6,7 @@ function Item ({id, name, price, image}) {
     return (
         <div className={i.Container}>
             <div className={i.Card} key={id}>
-                <img src={image} className={i.Image} />
+                <img src={image} className={i.Image} alt='product'/>
                 <hr />
                 <div className={i.Name}>{name}</div>
                 <div className={i.Price}>${price}</div>

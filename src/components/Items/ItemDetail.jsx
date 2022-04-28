@@ -15,7 +15,7 @@ const [count, setCount] = useState(0)
         
     return (
             <div className={d.Container}>
-                <img src={product.image} className={d.Image} />
+                <img src={product.image} className={d.Image} alt='product' />
                 <div className={d.Content}>
                     <div className= {d.Name}>{product.name}</div>
                     <div className={d.Category}>{product.category}</div>
