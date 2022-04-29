@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from "./ItemDetail";
-import { getItem } from '../../utils/products.js';
 import { useParams } from 'react-router-dom';
+import {doc, getDoc, getFirestore } from 'firebase/firestore';
 
-const ItemDetailContainer = () => {
+export default function ItemDetailContainer () {
     
     const [product, setProduct] = useState ({});
     const {id} = useParams ();
 
+
     useEffect (() => {
-        getItem(id)
-        .then((res) => {
-            setProduct(res)
-        })
-        .catch((error) => {
-            console.log(error);
+        const db = getFirestore();
+
+        const productRef = doc(db, 'products', id)
+
+        getDoc(productRef).then((res) => {
+            setProduct({id:res.id, ...res.data() });
         });
     }, [id]);
 
     return (
         <>
-        <ItemDetail product={product}/>
+            <ItemDetail
+                product={product}
+                id={id}
+                 />
         </>
     )
 }
-
-export default ItemDetailContainer;

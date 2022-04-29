@@ -1,5 +1,6 @@
+import React from 'react';
 import c from "./css/ItemCount.module.css";
-import { React, useState, useContext} from 'react';
+import { useState, useContext} from 'react';
 import { CartContext } from '../Cart/CartContext';
 
 function ItemCount ({stock, onAdd, product}) {

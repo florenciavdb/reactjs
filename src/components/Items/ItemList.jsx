@@ -5,13 +5,13 @@ import l from './css/ItemList.module.css';
 function ItemList({products}) {
     return (
         <div className={l.Container}>
-        {products.map(p => (   
+        {products.map(product => (   
             <Item
-            id={p.id}
-            key={p.id}
-            image={p.image}
-            name={p.name}
-            price={p.price}
+            id={product.id}
+            key={product.id}
+            image={product.image}
+            name={product.name}
+            price={product.price}
             />
         ))}  
         </div>

@@ -104,7 +104,7 @@ const products = [
 }
 ]
 
-export default products; 
+export default products;
 
 export const getItems = (categoryId) => {
     return new Promise ((resolve, reject) => {

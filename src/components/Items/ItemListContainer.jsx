@@ -1,22 +1,32 @@
-import React, {useEffect, useState} from 'react';
-import {getItems} from '../../utils/products';
-import ItemList from './ItemList';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import ItemList from './ItemList';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 
-export default function ItemListContainer () {
-    const [products, setProducts]= useState ([]);
-    const { categoryId } = useParams ();
-    /*console.log(categoryId);*/
 
+export default function ItemListContainer() {
+    const [products, setProducts] = useState([]);
+    const { id } = useParams();
+  
     useEffect(() => {
-        getItems (categoryId)
-        .then((res) => setProducts(res))
-        .catch ((error) => console.log(error));
-    }, [categoryId]);
-
+      console.log(id);
+      const db = getFirestore();
+  
+      let productsRef;
+      if (!id) {
+        productsRef = collection(db, 'products');
+      } else {
+        productsRef = query(collection(db, 'products'), where('category', '==', id));
+      }
+  
+      getDocs(productsRef).then((res) => {
+        setProducts(res.docs.map((item) => ({ id: item.id, ...item.data() })));
+      });
+    }, [id]);
+  
     return (
-        <div>
+      <>
         <ItemList products={products} />
-        </div>
-    )
-}
+      </>
+    );
+  }
