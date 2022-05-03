@@ -9,7 +9,7 @@ export default function ItemListContainer() {
     const { id } = useParams();
   
     useEffect(() => {
-      console.log(id);
+      //console.log(id);
       const db = getFirestore();
   
       let productsRef;

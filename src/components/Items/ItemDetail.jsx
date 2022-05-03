@@ -26,7 +26,6 @@ const [count, setCount] = useState(0)
                     <ItemSize sizes={product.sizes}/>
                        
                     {count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>See Cart</Link> }
-    
                 </div>
             </div>
     )
