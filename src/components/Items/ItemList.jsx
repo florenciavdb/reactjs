@@ -4,6 +4,7 @@ import l from './css/ItemList.module.css';
 
 function ItemList({products}) {
     return (
+        <>
         <div className={l.Container}>
         {products.map(product => (   
             <Item
@@ -11,10 +12,12 @@ function ItemList({products}) {
             key={product.id}
             image={product.image}
             name={product.name}
+            category2={product.category2}
             price={product.price}
             />
         ))}  
         </div>
+        </>
     )
 }
 

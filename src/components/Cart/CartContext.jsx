@@ -51,6 +51,8 @@ const CartContextProvider = ({ children }) => {
 
     const clear = () => setCart([]);
 
+    const [size, setSize] = useState(0);
+
     return (
         <CartContext.Provider value = {{cart, addItem, removeItem, clear, buyAll, quant, quantItems, totalValue, totalQuant}} >
             {children}

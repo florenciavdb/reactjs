@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .Btns {
+    font-family: 'Raleway', sans-serif;
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -7,6 +10,7 @@
 }
 
 .DecrementBtn {
+    font-family: 'Raleway', sans-serif;
     background-color: white;
     height: 30px;
     width: 140px;
@@ -21,6 +25,7 @@
 }
 
 .IncrementBtn {
+    font-family: 'Raleway', sans-serif;
     background-color: white;
     border: none;
     height: 28px;
@@ -35,6 +40,7 @@
 }
 
 .Count {
+    font-family: 'Raleway', sans-serif;
     background-color: white;
     border: none;
     height: 28px;
@@ -47,6 +53,7 @@
 }
 
 .AddBtn {
+    font-family: 'Raleway', sans-serif;
     float: left;
     background-color: white;
     border: none;

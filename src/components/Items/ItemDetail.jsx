@@ -17,15 +17,19 @@ const [count, setCount] = useState(0)
             <div className={d.Container}>
                 <img src={product.image} className={d.Image} alt='product'/>
                 <div className={d.Content}>
+                    <div className={d.Container2}>
                     <div className= {d.Name}>{product.name}</div>
+                    <div className={d.Category2}>{product.category2}</div>
+                    <hr />
                     <div className={d.Category}>{product.category}</div>
+                    <hr />
                     <div className= {d.Price}>${product.price}</div>
+                    <hr />
                     <div className={d.Description1}>{product.description1}</div>
-                    <div className={d.Description2}>{product.description2}</div>
-                    <div className={d.Description3}>{product.description3}</div>
+                    </div>
                     <ItemSize sizes={product.sizes}/>
                        
-                    {count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>See Cart</Link> }
+                    {count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>SEE CART</Link> }
                 </div>
             </div>
     )

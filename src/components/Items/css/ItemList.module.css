@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .Container {
     height: auto;
     width: 90%;
@@ -5,7 +7,7 @@
     margin: auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(550px, afr));
-    margin-top: 80px;
+    margin-top: 60px;
     row-gap: 100px;
     column-gap: 20px;
     justify-items: center;

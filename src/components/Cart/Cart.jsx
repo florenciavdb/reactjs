@@ -1,11 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import r from './Cart.module.css';
 import { Link } from 'react-router-dom';
+import ItemCount from '../Items/ItemCount';
 
-const Cart = () => {
+const Cart = ({product}) => {
     const {cart, removeItem, buyAll, totalValue } = useContext(CartContext);
 
+    const [count, setCount] = useState(0)
+
+    const onAdd = (amount) => {
+        setCount(amount)
+        return amount
+    } 
 
     return (
         <div className={r.Container}>
@@ -25,9 +32,10 @@ const Cart = () => {
                     <img className= {r.Picture} src={item.image} alt='product' />   
                     <span>{item.name}</span>
                     <span>{item.quant}</span>
+                    <span>{item.size}</span>
                     <span>${item.price}</span>
                     <span>${(item.price) * (item.quant)}</span>
-                    <button className={r.Remove} onClick={() => removeItem(item.id)}> Remove</button>
+                    <button className={r.Remove} onClick={() => removeItem(item.id)}>REMOVE</button>
               </div>
             ))}
         </div>
@@ -37,8 +45,8 @@ const Cart = () => {
         </div>
           
             <div className={r.btns}>
-                <Link to='/'><button className={r.continueBtn}> Continue Shopping </button></Link>
-                <Link to='/form'><button className = {r.BuyBtn} onClick={buyAll}> Buy </button></Link>
+                <Link to='/'><button className={r.continueBtn}> CONTINUE SHOPPING </button></Link>
+                <Link to='/form'><button className = {r.BuyBtn} onClick={buyAll}> BUY </button></Link>
             </div>
     </div>
   ); 

@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .Menu {
+  font-family: 'Raleway', sans-serif;
   width: 100%;
   height: 80px;
   background-color: black;
@@ -16,10 +19,11 @@
 }
 
 .Options {
-  display: flex;
+  display: inline-flex;
   flex-flow: wrap;
   justify-content: space-between;
   width: 500px;
+  position: relative;
 }
 
 .Options a{
@@ -38,3 +42,6 @@
   margin-top: 25px;
 }
 
+ul li {
+  position: absolute;
+}

@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .SizesBtn {
+    font-family: 'Raleway', sans-serif;
     width: 500px;
     display: flex;
     align-items: center;
@@ -6,13 +9,14 @@
 }
 
 .All {
+    font-family: 'Raleway', sans-serif;
     background-color:black;
     color: rgb(200, 200, 200);
     border: none;
     box-shadow: 1px 1px 1px 1px lightgray;
     width: 50px;
     height: 30px;
-    margin-top: 100px;
+    margin-top: 40px;
     font-size: 16px;
 }
 
@@ -20,4 +24,5 @@
     transition: 0.2s;
     color: white;
     font-weight: 550;
+    box-shadow: 2px 2px 2px 2px darkgray;
 }

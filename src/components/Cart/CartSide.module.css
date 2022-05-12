@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.gridItems{
+ display: grid;
+ grid-template-rows: 300px, 300px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 350px;
+    margin-top: 80px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 350px;
+    margin-bottom: 50px;
+}
+
+.itemsTittle{
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.ItemBuyDetails {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 70%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.ItemBuyDetails:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(240, 240, 240);
+    transition: 0.2s;
+}
+
+.Picture {
+    height: 100px;
+}
+
+.Remove {
+    font-family: 'Raleway', sans-serif;
+    background-color:black;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.Remove:hover {
+    transition: 0.2s;
+    font-size: 16.5px;
+    color: rgb(200, 200, 200);
+}
+
+.gridTotal {
+    border-color: rgb(230, 230, 230);
+    border-style: solid;
+    width: 100%;
+}
+
+.totalPrice {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: darkgray;
+    text-decoration: underline;
+}
+
+.btns{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.continueBtn {
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    margin-top: 100px;
+    background-color: white;
+    border: none;
+    height: 35px;
+    width: 350px;
+    font-size: 18px;
+    color: rgb(130, 130, 130);
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.continueBtn:hover {
+    font-weight: 550;
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 3px 3px rgb(220, 220, 220);
+    transition: 0.2s;
+}
+
+.BuyBtn {
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    margin-top: 100px;
+    background-color: white;
+    border: none;
+    height: 35px;
+    width: 350px;
+    font-size: 18px;
+    color: rgb(130, 130, 130);
+    box-shadow: 1px 1px 1px 1px lightgray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BuyBtn:hover {
+    font-weight: 550;
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(245, 245, 245);
+    box-shadow: 3px 3px 3px 3px rgb(220, 220, 220);
+    transition: 0.2s;
+}
