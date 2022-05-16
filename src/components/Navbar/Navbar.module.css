@@ -2,7 +2,7 @@
 
 .Menu {
   font-family: 'Raleway', sans-serif;
-  width: 100%;
+  width: auto;
   height: 80px;
   background-color: black;
   display: flex;
@@ -18,12 +18,31 @@
   height: 60px;
 }
 
+.CarW {
+  float: right;
+  margin-right: 50px;
+  height: 60px;
+  margin-top: 25px;
+}
+
 .Options {
-  display: inline-flex;
+  width: 50%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   flex-flow: wrap;
-  justify-content: space-between;
-  width: 500px;
-  position: relative;
+  margin: auto;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.box {
+  width: 5%;
+  height: 3%;
+  margin: 15px;
+  font-size: 16px;
 }
 
 .Options a{
@@ -33,13 +52,6 @@
 
 .Options a:hover{
   color:lightgray;
-}
-
-.CarW {
-  float: right;
-  margin-right: 50px;
-  height: 60px;
-  margin-top: 25px;
 }
 
 ul li {

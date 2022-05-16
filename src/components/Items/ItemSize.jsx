@@ -6,12 +6,14 @@ import { CartContext } from '../Cart/CartContext';
 const ItemSize = ({sizes}) => {
 
     return (
+        <>
         <div className={s.SizesBtn}>
 
            {sizes && sizes.map(item => (
                <button className={s.All}>{item}</button>
            ))}
         </div>
+        </>
     )
 }
 

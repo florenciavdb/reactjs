@@ -27,12 +27,6 @@ const CartSide = () => {
           {cart.length > 0 &&  
           <h3>TOTAL: ${totalValue}</h3>}
         </div>
-        <div className={r.btns}>
-                <Link to='/'><button className={r.continueBtn}> CONTINUE SHOPPING </button></Link>
-                <Link to='/form'><button className = {r.BuyBtn} onClick={buyAll}> BUY </button></Link>
-
-                {/*{count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>SEE CART</Link> }*/}
-            </div>
     </div>
   ); 
 };

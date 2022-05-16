@@ -3,20 +3,17 @@ import { CartContext } from '../Cart/CartContext';
 import { collection, getFirestore, addDoc, serverTimestamp } from 'firebase/firestore';
 import w from './Form.module.css';
 import { useForm } from "react-hook-form";
-import Cart from '../Cart/Cart';
-import EmptyCart from '../Cart/EmptyCart';
+import Modal from '../Modal/Modal';
+
 
 export default function Form({product}) {
   const [count, setCount] = useState(0)
 
-    const onAdd = (amount) => {
-        setCount(amount)
-        return amount
-    }
+  const {cart, totalValue, buyAll } = useContext(CartContext);
 
-  const {cart, totalValue } = useContext(CartContext);
+  const { handleSubmit } = useForm();
 
-  const { handleSubmit, register, errors } = useForm();
+  const {onError} = useForm();
 
   const onSubmit = (data) => {
   }
@@ -35,34 +32,58 @@ export default function Form({product}) {
             buyer: {name, phone, email},
             total: totalValue,
             date: serverTimestamp(),
+            items: cart,
         }
+
+    console.log(buyer); 
 
     addDoc(ordersRef, buyer).then(({id}) => {
         console.log(buyer, id)
     });
+    buyAll()
 }
 
-  return (
-    <>
+return (
+  <>
+    <div className = {w.gridItems}>
+          {cart.length > 0 &&
+            cart.map((item) => (
+       <div className={w.Container2}> 
+          <div className={w.boxName}>{item.name}</div>
+          <div className={w.box}>{item.quant}</div>
+          <div className={w.box}>{item.size}</div>
+          <div className={w.box}>${item.price}</div>
+          <div className={w.box}>${(item.price) * (item.quant)}</div>
+        </div>
+            ))}
+        </div>
+        <div className = {w.totalPrice}>
+          {cart.length > 0 &&  
+          <h3>TOTAL: ${totalValue}</h3>}
+        </div>
 
-    <form onSubmit={handleSubmit(onSubmit)} className={w.Form}>
-        <div className={w.Name}>
-          <label for="name">NAME: </label>
-          <input type={'text'} name="name" value={name} onChange={(e) => {setName(e.currentTarget.value)}} placeholder="John Smith" required />
-        </div>
-        <hr />
-        <div className={w.Email}>
-          <label for="email">EMAIL: </label>
-          <input type={'text'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
-        </div>
-        <hr />
-        <div className={w.Phone}>
-          <label for="phone">PHONE: </label>
-          <input type={'number'} name="phone" className="phone" value={phone} onChange={(e) => {setPhone(e.currentTarget.value);}} placeholder="+15854380024" required />
-        </div>
-        <hr />
-      <button className={w.Btn} onClick={() => { finishPurchase()}}> FINISH PURCHASE </button>
-    </form>
-    </>
-  );
+
+{/*FORM*/}
+            
+  <form onSubmit={handleSubmit(onSubmit, onError)} className={w.Form}>
+          <div className={w.Name}>
+            <label for="name">NAME: </label>
+            <input type={'text'} name="name" value={name} onChange={(e) => {setName(e.currentTarget.value)}} placeholder="John Smith" required />
+          </div>
+          <hr />
+          <div className={w.Email}>
+            <label for="email">EMAIL: </label>
+            <input type={'email'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
+          </div>
+          <hr />
+          <div className={w.Phone}>
+            <label for="phone">PHONE: </label>
+            <input type={'number'} name="phone" className="phone" value={phone} onChange={(e) => {setPhone(e.currentTarget.value);}} placeholder="+15854380024" required />
+          </div>
+          <hr />
+          <button className={w.Btn} onClick={() => { finishPurchase()}}> FINISH PURCHASE </button>
+      </form>
+</>
+)
 }
+                    
