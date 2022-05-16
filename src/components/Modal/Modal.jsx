@@ -1,9 +1,34 @@
-import * as React from 'react';
+import React, { useState, useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { withTheme } from '@emotion/react';
+import { collection, getFirestore, addDoc, serverTimestamp } from 'firebase/firestore';
+
+const { totalValue, buyAll } = useContext(CartContext);
+
+function finishPurchase() {
+  
+  const db = getFirestore();
+
+  const ordersRef = collection (db, 'orders');
+
+  let buyer = {
+          buyer: {name, phone, email},
+          total: totalValue,
+          date: serverTimestamp(),
+          items: cart,
+      }
+
+  console.log(buyer); 
+
+  addDoc(ordersRef, buyer).then(({id}) => {
+      console.log(buyer, id)
+      buyAll()
+  });
+}
 
 const styleBtn = {
   width: 200,
@@ -33,15 +58,14 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button sx={styleBtn} onClick={handleOpen}>FINISH PURCHASE</Button>
-      {/*<Button sx={styleBtn} onClick={handleOpen} className={g.btn}>FINISH PURCHASE</Button>*/}
+      <Button sx={styleBtn} onClick={handleOpen}>CONTINUE</Button>
       <Modal
         open={open}
         onClose={handleClose}>
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Thanks for your purchase!
-          </Typography>
+
+        <Button onClick={() => { finishPurchase()}}> FINISH PURCHASE </Button>
+
         </Box>
       </Modal>
     </div>

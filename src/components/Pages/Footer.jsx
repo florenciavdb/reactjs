@@ -10,9 +10,9 @@ export default function Footer () {
             <div className={f.allContent}>
             <p>SEE OUR UPCOMING EVENTS!</p>
             <div className={f.Icons}>
-                <WhatsAppIcon fontSize="large" />
-                <InstagramIcon fontSize="large"/>
-                <FacebookIcon fontSize="large"/>
+                <WhatsAppIcon fontSize= 'sm=small'  />
+                <InstagramIcon fontSize= 'sm=small' />
+                <FacebookIcon fontSize='sm=small'/>
             </div>
             </div>
         </div>

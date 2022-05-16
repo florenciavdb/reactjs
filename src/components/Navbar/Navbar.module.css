@@ -2,7 +2,7 @@
 
 .Menu {
   font-family: 'Raleway', sans-serif;
-  width: auto;
+  width: 100%;
   height: 80px;
   background-color: black;
   display: flex;
@@ -18,31 +18,12 @@
   height: 60px;
 }
 
-.CarW {
-  float: right;
-  margin-right: 50px;
-  height: 60px;
-  margin-top: 25px;
-}
-
 .Options {
-  width: 50%;
-  height: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: inline-flex;
   flex-flow: wrap;
-  margin: auto;
-  align-items: center;
-  row-gap: 20px;
-  margin-top: 20px;
-}
-
-.box {
-  width: 5%;
-  height: 3%;
-  margin: 15px;
-  font-size: 16px;
+  justify-content: space-between;
+  width: 500px;
+  position: relative;
 }
 
 .Options a{
@@ -54,6 +35,161 @@
   color:lightgray;
 }
 
+.CarW {
+  float: right;
+  margin-right: 50px;
+  height: 60px;
+  margin-top: 25px;
+}
+
 ul li {
   position: absolute;
+}
+
+@media only screen and (max-width: 1224px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .Menu {
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .Logo {
+    float: left;
+    margin-left: 60px;
+    height: 50px;
+  }
+  
+  .Options {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 400px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .Options a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Options a:hover{
+    color:lightgray;
+  }
+  
+  .CarW {
+    float: right;
+    margin-right: 70px;
+    height: 60px;
+    margin-top: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .Menu {
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .Logo {
+    float: left;
+    margin-left: 30px;
+    height: 40px;
+  }
+  
+  .Options {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 250px;
+    position: relative;
+    font-size: 12px;
+  }
+  
+  .Options a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Options a:hover{
+    color:lightgray;
+  }
+  
+  .CarW {
+    float: right;
+    margin-right: 80px;
+    height: 50px;
+    margin-top: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .Menu {
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .Logo {
+    float: left;
+    margin-left: 15px;
+    height: 50px;
+  }
+  
+  .Options {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 70px;
+    position: relative;
+    font-size: 12px;
+    margin-top: 30px;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .Options a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Options a:hover{
+    color:lightgray;
+  }
+  
+  .CarW {
+    float: right;
+    margin-right: 20px;
+    height: 50px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
 }
