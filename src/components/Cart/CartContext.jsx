@@ -19,16 +19,6 @@ const CartContextProvider = ({ children }) => {
         }, 0)
     }
 
-   {/*} const totalQuant = cart.reduce((total, product) => total + product.quant, 0)
-  const [totalQuant, setTotalQuant] = useState(0);
-
-    const calcQuant = () => setTotalQuant(cart.reduce((total, item) => (total += item.quant), 0))
-
-    useEffect (() => {
-        calcQuant()
-    }, [cart]*/}
-    
-
     const addItem = (item, quant) => { 
         item.quant = quant;
     const indexProduct = cart.findIndex((cartItem)=>cartItem.id === item.id);

@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
 import r from './Cart.module.css';
 import { Link } from 'react-router-dom';
-import ItemCount from '../Items/ItemCount';
 
 const Cart = ({product}) => {
     const {cart, removeItem, buyAll, totalValue } = useContext(CartContext);

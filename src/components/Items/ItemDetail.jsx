@@ -1,24 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import ItemCount from './ItemCount';
 import d from './css/ItemDetail.module.css';
-import ItemSize from './ItemSize';
 import { Link } from 'react-router-dom';
-import Item from './Item';
+import ItemSize from './ItemSize';
+import { CartContext } from '../Cart/CartContext';
 
-const ItemDetail = ({product}) => {
+const ItemDetail = ({product, item, }) => {
 
 const [count, setCount] = useState(0)
+
+const { addItem, addSize } = useContext (CartContext);
+
+const [selectedSize, setSelectedSize] = useState ("")
+
+const [sizes, setSizes] = useState("");
 
     const onAdd = (amount) => {
         setCount(amount)
         return amount
     } 
 
-const [selectedSize, setSelectedSize] = useState(0);
-
         
     return (
-        <>
             <div className={d.Container}>
                 <img src={product.image} className={d.Image} alt='product'/>
                 <div className={d.Content}>
@@ -32,13 +35,11 @@ const [selectedSize, setSelectedSize] = useState(0);
                     <hr />
                     <div className={d.Description1}>{product.description1}</div>
                     </div>
-                    
                     <ItemSize sizes={product.sizes}/>
-                       
                     {count === 0 ? <ItemCount product={product} stock={product.stock} onAdd={onAdd} /> : <Link to='/cart' className={d.GoCart}>SEE CART</Link> }
                 </div>
             </div>
-            </>
+            
     )
 }
 

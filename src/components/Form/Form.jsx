@@ -1,17 +1,26 @@
 import React, { useState, useContext } from 'react';
 import { CartContext } from '../Cart/CartContext';
-import { collection, getFirestore, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, getFirestore, addDoc, serverTimestamp, getDoc } from 'firebase/firestore';
 import w from './Form.module.css';
 
 export default function Form({product}) {
-  const [count, setCount] = useState(0)
+  const [count, setCount ] = useState(0)
+
+  const [checkoutConfirmation, setCheckoutConfirmation] = useState(false)
+  const toggleCheckoutConfirmation = () => {
+    setCheckoutConfirmation(!checkoutConfirmation);
+  }
+
+  const [checkoutOrder, setCheckoutOrder] = useState([]);
+
+  const {buyAll} = useContext(CartContext);
 
     const onAdd = (amount) => {
         setCount(amount)
         return amount
     }
 
-  const {cart, totalValue, buyAll } = useContext(CartContext);
+  const {cart, totalValue } = useContext(CartContext);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -29,12 +38,13 @@ export default function Form({product}) {
             total: totalValue,
             date: serverTimestamp(),
         }
-
-    addDoc(ordersRef, buyer).then(({id}) => {
-        console.log(buyer, id)
-    });
-    buyAll()
-}
+        
+        getDoc(ordersRef).then(snapshot=>{
+          if (snapshot.exists()){
+            setCheckoutOrder(snapshot.data());
+          }
+        })
+      }
 
   return (
     <>
@@ -66,7 +76,7 @@ export default function Form({product}) {
         <hr />
         <div className={w.Email}>
           <label for="email">EMAIL: </label>
-          <input type={'text'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
+          <input type={'email'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
         </div>
         <hr />
         <div className={w.Phone}>
