@@ -115,12 +115,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 480px) {
     .SizesBtn {
         font-family: 'Raleway', sans-serif;
-        width: 240px;
+        width: 300px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -146,6 +143,31 @@
     }
 }
 
-
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
+    .SizesBtn {
+        font-family: 'Raleway', sans-serif;
+        width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .All {
+        font-family: 'Raleway', sans-serif;
+        background-color:black;
+        color: rgb(200, 200, 200);
+        border: none;
+        box-shadow: 1px 1px 1px 1px lightgray;
+        width: 35px;
+        height: 22px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .All:hover{
+        transition: 0.2s;
+        color: white;
+        font-weight: 550;
+        box-shadow: 2px 2px 2px 2px darkgray;
+    }
 }

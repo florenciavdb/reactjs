@@ -3,7 +3,7 @@
 .Container{
     margin: auto;
     height: auto;
-    width: 1150px;
+    width: 1100px;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
@@ -333,6 +333,7 @@
     
     .Container2 {
         height: 300px;
+        width: 300px;
         border-radius: 4px;
         border-style: solid;
         border-color: lightgray;
@@ -401,7 +402,7 @@
     }
 
     .Container2 {
-        height: 300px;
+        height: 270px;
         width: 240px;
         border-radius: 4px;
         border-style: solid;
@@ -410,17 +411,17 @@
     
     .Name {
         font-family: 'Raleway', sans-serif;
-        font-size: 25px;
+        font-size: 22px;
         margin-left: 20px;
         margin-top: 20px;
     }
     
     .Price {
         font-family: 'Raleway', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         color: black;
         font-weight: 620;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 20px;
     }
     
@@ -433,7 +434,7 @@
     
     .Category {
         font-family: 'Raleway', sans-serif;
-        margin-top: 20px;
+        margin-top: 18px;
         font-size: 16px;
         margin-bottom: 20px;
         background-color: black;

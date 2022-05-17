@@ -47,6 +47,48 @@ ul li {
 }
 
 @media only screen and (max-width: 1224px) {
+  .Menu {
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .Logo {
+    float: left;
+    margin-left: 120px;
+    height: 50px;
+  }
+  
+  .Options {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 350px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .Options a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Options a:hover{
+    color:lightgray;
+  }
+  
+  .CarW {
+    float: right;
+    margin-right: 140px;
+    height: 60px;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

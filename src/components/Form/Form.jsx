@@ -4,17 +4,14 @@ import { collection, getFirestore, addDoc, serverTimestamp } from 'firebase/fire
 import w from './Form.module.css';
 
 export default function Form({product}) {
-  const [count, setCount, buyAll] = useState(0)
+  const [count, setCount] = useState(0)
 
     const onAdd = (amount) => {
         setCount(amount)
         return amount
     }
 
-  const {cart, totalValue } = useContext(CartContext);
-
-  const onSubmit = (data) => {
-  }
+  const {cart, totalValue, buyAll } = useContext(CartContext);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
