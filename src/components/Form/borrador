@@ -7,6 +7,13 @@ export default function Form({ product }) {
 
   const [count, setCount] = useState(0)
 
+  const [checkoutConfirmation, setCheckoutConfirmation] = useState(false)
+  const toggleCheckoutConfirmation = () => {
+    setCheckoutConfirmation(!checkoutConfirmation);
+  }
+
+  const [checkoutOrder, setCheckoutOrder] = useState([]);
+
   const { buyAll } = useContext(CartContext);
 
   const onAdd = (amount) => {
@@ -33,11 +40,13 @@ export default function Form({ product }) {
       date: serverTimestamp(),
     }
 
-    addDoc(ordersRef, buyer).then(({id}) => {
-      console.log(buyer, id)
-    });
-    buyAll()
-    }
+    getDoc(ordersRef).then(snapshot => {
+      if (snapshot.exists()) {
+        setCheckoutOrder(snapshot.data());
+      }
+      buyAll()
+    })
+  }
 
   return (
     <>
@@ -84,6 +93,7 @@ export default function Form({ product }) {
           <input type={'number'} name="phone" className="phone" value={phone} onChange={(e) => { setPhone(e.currentTarget.value); }} placeholder="+15854380024" required />
         </div>
         <hr />
+
 
         <button className={w.Butn} onClick={() => { finishPurchase() }}>FINISH PURCHASE </button>
       </form>
