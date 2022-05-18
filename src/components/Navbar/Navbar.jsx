@@ -18,12 +18,12 @@ import logo from '../../img/logo1.png';
 
 
 const pages = [
-  <Link to='/category/Men'><p>MEN</p></Link>,
-  <Link to='/category/Women'><p>WOMEN</p></Link>,
-  <Link to='/category/Kids'><p>KIDS</p></Link>,
-  <Link to='/category/Snow'><p>SNOW</p></Link>,
-  <Link to='/category/Surf'><p>SURF</p></Link>,
-  <Link to='/category/Surf'><p>SKATE</p></Link>,
+  <Link to= '/category/Men' style={{ textDecoration: 'none' }}><p>MEN</p></Link>,
+  <Link to='/category/Women' style={{ textDecoration: 'none' }}><p>WOMEN</p></Link>,
+  <Link to='/category/Kids' style={{ textDecoration: 'none' }}><p>KIDS</p></Link>,
+  <Link to='/category/Snow' style={{ textDecoration: 'none' }}><p>SNOW</p></Link>,
+  <Link to='/category/Surf' style={{ textDecoration: 'none' }}><p>SURF</p></Link>,
+  <Link to='/category/Surf' style={{ textDecoration: 'none' }}><p>SKATE</p></Link>,
 ];
 
 
