@@ -20,7 +20,7 @@
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 
-.DecrementBtn:hover{
+.DecrementBtn:hover {
     font-weight: 550;
 }
 
@@ -74,7 +74,7 @@ p {
 }
 
 
-/********** MEDIA QUERIES **********/
+/**************************************** MEDIA QUERIES ****************************************/
 
 @media only screen and (max-width: 1224px) {
     .Btns {
@@ -85,7 +85,7 @@ p {
         justify-content: space-between;
         width: 500px;
     }
-    
+
     .DecrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -96,11 +96,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
-    .DecrementBtn:hover{
+
+    .DecrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .IncrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -111,11 +111,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .IncrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .Count {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -126,9 +126,9 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
         text-align: center;
-    
+
     }
-    
+
     .AddBtn {
         font-family: 'Raleway', sans-serif;
         float: left;
@@ -140,19 +140,17 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .AddBtn:hover {
         font-weight: 550;
     }
-    
+
     p {
         font-size: 18px;
         color: rgb(130, 130, 130);
     }
-    
 }
 
-/********* MEDIA QUERIES *******/
 @media only screen and (max-width: 1224px) {
     .Btns {
         font-family: 'Raleway', sans-serif;
@@ -162,7 +160,7 @@ p {
         justify-content: space-between;
         width: 400px;
     }
-    
+
     .DecrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -173,11 +171,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
-    .DecrementBtn:hover{
+
+    .DecrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .IncrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -188,11 +186,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .IncrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .Count {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -203,9 +201,9 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
         text-align: center;
-    
+
     }
-    
+
     .AddBtn {
         font-family: 'Raleway', sans-serif;
         float: left;
@@ -217,16 +215,16 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .AddBtn:hover {
         font-weight: 550;
     }
-    
+
     p {
         font-size: 18px;
         color: rgb(130, 130, 130);
     }
-    
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -238,7 +236,7 @@ p {
         justify-content: space-between;
         width: 330px;
     }
-    
+
     .DecrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -249,11 +247,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
-    .DecrementBtn:hover{
+
+    .DecrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .IncrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -264,11 +262,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .IncrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .Count {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -279,9 +277,9 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
         text-align: center;
-    
+
     }
-    
+
     .AddBtn {
         font-family: 'Raleway', sans-serif;
         float: left;
@@ -293,16 +291,16 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .AddBtn:hover {
         font-weight: 550;
     }
-    
+
     p {
         font-size: 18px;
         color: rgb(130, 130, 130);
     }
-    
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -314,7 +312,7 @@ p {
         justify-content: space-between;
         width: 300px;
     }
-    
+
     .DecrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -325,11 +323,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
-    .DecrementBtn:hover{
+
+    .DecrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .IncrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -340,11 +338,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .IncrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .Count {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -355,9 +353,9 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
         text-align: center;
-    
+
     }
-    
+
     .AddBtn {
         font-family: 'Raleway', sans-serif;
         float: left;
@@ -369,11 +367,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .AddBtn:hover {
         font-weight: 550;
     }
-    
+
     p {
         font-size: 18px;
         color: rgb(130, 130, 130);
@@ -389,7 +387,7 @@ p {
         justify-content: space-between;
         width: 240px;
     }
-    
+
     .DecrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -400,11 +398,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
-    .DecrementBtn:hover{
+
+    .DecrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .IncrementBtn {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -415,11 +413,11 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .IncrementBtn:hover {
         font-weight: 550;
     }
-    
+
     .Count {
         font-family: 'Raleway', sans-serif;
         background-color: white;
@@ -430,9 +428,9 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
         text-align: center;
-    
+
     }
-    
+
     .AddBtn {
         font-family: 'Raleway', sans-serif;
         float: left;
@@ -444,16 +442,13 @@ p {
         color: rgb(130, 130, 130);
         box-shadow: 1px 1px 1px 1px lightgray;
     }
-    
+
     .AddBtn:hover {
         font-weight: 550;
     }
-    
+
     p {
         font-size: 18px;
         color: rgb(130, 130, 130);
     }
-}
-
-@media only screen and (max-width: 320px) {
 }

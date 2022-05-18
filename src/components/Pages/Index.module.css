@@ -1,18 +1,23 @@
-.Container{
+.Container {
     margin-top: 6px;
 }
 
-.snow, .skate, .surf {
+.snow,
+.skate,
+.surf {
     position: relative;
     width: 100%;
 }
 
-.imgSnow, .imgSkate {
+.imgSnow,
+.imgSkate {
     display: block;
     width: 100%;
 }
 
-.imgSnow__overlay, .imgSkate__overlay, .imgSnow__overlay {
+.imgSnow__overlay,
+.imgSkate__overlay,
+.imgSnow__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +33,9 @@
     transition: opacity 1s;
 }
 
-.imgSnow__overlay:hover, .imgSkate__overlay:hover, .imgSnow__overlay:hover {
+.imgSnow__overlay:hover,
+.imgSkate__overlay:hover,
+.imgSnow__overlay:hover {
     opacity: 1;
 }
 

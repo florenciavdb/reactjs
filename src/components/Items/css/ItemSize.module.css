@@ -10,7 +10,7 @@
 
 .All {
     font-family: 'Raleway', sans-serif;
-    background-color:black;
+    background-color: black;
     color: rgb(200, 200, 200);
     border: none;
     box-shadow: 1px 1px 1px 1px lightgray;
@@ -20,12 +20,14 @@
     font-size: 16px;
 }
 
-.All:hover{
+.All:hover {
     transition: 0.2s;
     color: white;
     font-weight: 550;
     box-shadow: 2px 2px 2px 2px darkgray;
 }
+
+/**************************************** MEDIA QUERIES ****************************************/
 
 @media only screen and (max-width: 1224px) {
     .SizesBtn {
@@ -35,10 +37,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .All {
         font-family: 'Raleway', sans-serif;
-        background-color:black;
+        background-color: black;
         color: rgb(200, 200, 200);
         border: none;
         box-shadow: 1px 1px 1px 1px lightgray;
@@ -46,13 +48,6 @@
         height: 30px;
         margin-top: 40px;
         font-size: 16px;
-    }
-    
-    .All:hover{
-        transition: 0.2s;
-        color: white;
-        font-weight: 550;
-        box-shadow: 2px 2px 2px 2px darkgray;
     }
 }
 
@@ -64,10 +59,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .All {
         font-family: 'Raleway', sans-serif;
-        background-color:black;
+        background-color: black;
         color: rgb(200, 200, 200);
         border: none;
         box-shadow: 1px 1px 1px 1px lightgray;
@@ -75,13 +70,6 @@
         height: 25px;
         margin-top: 25px;
         font-size: 15px;
-    }
-    
-    .All:hover{
-        transition: 0.2s;
-        color: white;
-        font-weight: 550;
-        box-shadow: 2px 2px 2px 2px darkgray;
     }
 }
 
@@ -93,10 +81,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .All {
         font-family: 'Raleway', sans-serif;
-        background-color:black;
+        background-color: black;
         color: rgb(200, 200, 200);
         border: none;
         box-shadow: 1px 1px 1px 1px lightgray;
@@ -104,13 +92,6 @@
         height: 25px;
         margin-top: 20px;
         font-size: 15px;
-    }
-    
-    .All:hover{
-        transition: 0.2s;
-        color: white;
-        font-weight: 550;
-        box-shadow: 2px 2px 2px 2px darkgray;
     }
 }
 
@@ -122,10 +103,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .All {
         font-family: 'Raleway', sans-serif;
-        background-color:black;
+        background-color: black;
         color: rgb(200, 200, 200);
         border: none;
         box-shadow: 1px 1px 1px 1px lightgray;
@@ -133,13 +114,6 @@
         height: 25px;
         margin-top: 20px;
         font-size: 15px;
-    }
-    
-    .All:hover{
-        transition: 0.2s;
-        color: white;
-        font-weight: 550;
-        box-shadow: 2px 2px 2px 2px darkgray;
     }
 }
 
@@ -151,10 +125,10 @@
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .All {
         font-family: 'Raleway', sans-serif;
-        background-color:black;
+        background-color: black;
         color: rgb(200, 200, 200);
         border: none;
         box-shadow: 1px 1px 1px 1px lightgray;
@@ -162,12 +136,5 @@
         height: 22px;
         margin-top: 20px;
         font-size: 12px;
-    }
-    
-    .All:hover{
-        transition: 0.2s;
-        color: white;
-        font-weight: 550;
-        box-shadow: 2px 2px 2px 2px darkgray;
     }
 }
