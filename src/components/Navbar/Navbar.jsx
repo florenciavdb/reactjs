@@ -23,7 +23,7 @@ const pages = [
   <Link to='/category/Kids' style={{ textDecoration: 'none' }}><p>KIDS</p></Link>,
   <Link to='/category/Snow' style={{ textDecoration: 'none' }}><p>SNOW</p></Link>,
   <Link to='/category/Surf' style={{ textDecoration: 'none' }}><p>SURF</p></Link>,
-  <Link to='/category/Surf' style={{ textDecoration: 'none' }}><p>SKATE</p></Link>,
+  <Link to='/category/Skate' style={{ textDecoration: 'none' }}><p>SKATE</p></Link>,
 ];
 
 
