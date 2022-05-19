@@ -5,12 +5,15 @@ import w from './Form.module.css';
 import { useForm } from "react-hook-form";
 
 
+
 export default function Form({product}) {
   const [count, setCount] = useState(0)
 
   const {cart, totalValue, buyAll } = useContext(CartContext);
 
   const { handleSubmit } = useForm();
+
+
 
   const onSubmit = (data) => {
   }
@@ -77,7 +80,7 @@ return (
           <hr />
           <div className={w.Email}>
             <label for="email">EMAIL: </label>
-            <input type={'email'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
+            <input type={'text'} name="email" value={email} onChange={(e) => {setEmail(e.currentTarget.value)}} placeholder="johnsmth@gmail.com" required />
           </div>
           <hr />
           <div className={w.Phone}>
